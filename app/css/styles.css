@@ -190,16 +190,25 @@
   height: unset; }
   @media (min-width: 600px) {
     .section-4 {
-      background-position: center; } }
+      display: flex;
+      flex-direction: row-reverse;
+      height: 60vh;
+      align-items: center; } }
 
 .section-4-macbook {
   margin: 35px 0; }
+  @media (min-width: 600px) {
+    .section-4-macbook {
+      width: 80%; } }
 
 .section-4-title {
   margin: 20px 0 0 20px; }
+  @media (min-width: 600px) {
+    .section-4-title {
+      max-width: 70%; } }
 
 .section-4-paragraph {
-  padding: 10px; }
+  max-width: 90%; }
 
 .section-5 {
   background-image: url("../images/section-5-BG.png");

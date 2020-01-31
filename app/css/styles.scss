@@ -218,11 +218,6 @@
     background-position: center;
     height: 60vh;
   }
-
-  //display: flex;
-  //align-items: center;
-  //justify-content: center;
-  //flex-direction: column;
 }
 
 .section-3-title {
@@ -232,8 +227,8 @@
 
 .section-3-new-features {
   align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
+  text-align: center;
+  justify-content: space-evenly;
 }
 
 .feature-title {
@@ -258,26 +253,35 @@
   height: unset;
 
   @media (min-width: 600px) {
-    background-position: center;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60vh;
+    align-items: center;
 
   }
 
-  //display: flex;
-  //align-items: center;
-  //justify-content: center;
-  //flex-direction: column;
 }
+
 
 .section-4-macbook {
   margin: 35px 0;
+
+  @media (min-width: 600px) {
+    width: 80%;
+  }
 }
 
 .section-4-title {
   margin: 20px 0 0 20px;
+
+  @media (min-width: 600px) {
+    max-width: 70%;
+  }
+
 }
 
 .section-4-paragraph {
-  padding: 10px;
+      max-width: 90%;
 }
 
 .section-5 {
