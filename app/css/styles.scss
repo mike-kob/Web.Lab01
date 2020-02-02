@@ -152,15 +152,36 @@
 
 
 .section-2 {
-  display: inline-block;
-  height: fit-content;
-  //flex-direction: row;
-  //align-items: center;
-  //justify-content: center;
+  position: relative;
+
+  & .triangle {
+    position: absolute;
+    bottom: 0;
+    background-color: #ececec;
+    right: 0;
+    width: 0;
+    height: 100%;
+    border-style: solid;
+    border-width: 0 0 50vh 50vh;
+    border-color: transparent transparent #fb8686 transparent;
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  & .new-design {
+
+    z-index: 10;
+    background-color: white;
+    height: 100%;
+    @media (min-width: 600px) {
+      margin: 0 40% 0 0;
+    }
+  }
 }
 
 .section-2-description {
-  padding: 10px;
+  padding: 80px 50px 80px 20px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -216,7 +237,7 @@
 
   @media (min-width: 600px) {
     background-position: center;
-    height: 60vh;
+    padding: 50px;
   }
 }
 
@@ -242,6 +263,7 @@
 
   @media (min-width: 600px) {
     max-width: 27%;
+    margin: auto;
   }
 }
 
@@ -267,6 +289,7 @@
 
   @media (min-width: 600px) {
     width: 80%;
+    max-width: 550px;
   }
 }
 
@@ -286,10 +309,11 @@
 
 .section-5 {
   background-image: url("../images/section-5-BG.png");
-  height: fit-content;
+  height: unset;
+  background-repeat: round;
 
   @media (min-width: 600px) {
-    height: 70vh;
+    padding: 50px 10px;
     align-items: center;
   }
 }
@@ -308,17 +332,6 @@
 
 .section-6 {
   background-image: url("../images/section-6-BG.png");
-  height: 100vh;
-
-  @media (min-width: 600px) {
-
-
-  }
-}
-
-
-.section-7 {
-  background-image: url("../images/section-7-BG.png");
   height: unset;
 
   @media (min-width: 600px) {
@@ -326,6 +339,37 @@
 
   }
 }
+
+.section-6-paragraph {
+  @media (min-width: 600px) {
+    max-width: 70%;
+    margin: auto;
+
+  }
+}
+
+.section-6-browser {
+  @media (min-width: 600px) {
+    max-width: 70%;
+    margin: auto;
+
+  }
+}
+
+.section-7 {
+  background-image: url("../images/section-7-BG.png");
+  height: unset;
+
+  @media (min-width: 600px) {
+    padding: 60px;
+
+  }
+}
+
+.signup-form {
+  margin-top: 60px;
+}
+
 
 .signup-input {
   border-radius: 3px;
@@ -335,10 +379,20 @@
   height: 35px;
   width: 90%;
   padding-left: 7px;
+
+  @media (min-width: 600px) {
+    width: 20%;
+  }
+}
+
+.section-7-terms {
+  color: #b8b9c3;
+  font-size: 0.7em;
 }
 
 .transparent-background {
   background-color: #ffffff2b;
+
 }
 
 .signup-button {
@@ -348,6 +402,9 @@
   width: 90%;
   background-color: #ff6d6d;
   border: none;
+  @media (min-width: 600px) {
+    width: 20%;
+  }
 }
 
 .footer {

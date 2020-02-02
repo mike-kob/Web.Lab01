@@ -112,11 +112,30 @@
   font-size: 14pt; }
 
 .section-2 {
-  display: inline-block;
-  height: fit-content; }
+  position: relative; }
+  .section-2 .triangle {
+    position: absolute;
+    bottom: 0;
+    background-color: #ececec;
+    right: 0;
+    width: 0;
+    height: 100%;
+    border-style: solid;
+    border-width: 0 0 50vh 50vh;
+    border-color: transparent transparent #fb8686 transparent; }
+    @media (max-width: 600px) {
+      .section-2 .triangle {
+        display: none; } }
+  .section-2 .new-design {
+    z-index: 10;
+    background-color: white;
+    height: 100%; }
+    @media (min-width: 600px) {
+      .section-2 .new-design {
+        margin: 0 40% 0 0; } }
 
 .section-2-description {
-  padding: 10px;
+  padding: 80px 50px 80px 20px;
   display: flex;
   flex-direction: column;
   align-content: center; }
@@ -161,7 +180,7 @@
   @media (min-width: 600px) {
     .section-3 {
       background-position: center;
-      height: 60vh; } }
+      padding: 50px; } }
 
 .section-3-title {
   font-family: ExoMedium, sans-serif;
@@ -181,7 +200,8 @@
   margin: 40px 20px; }
   @media (min-width: 600px) {
     .feature-card {
-      max-width: 27%; } }
+      max-width: 27%;
+      margin: auto; } }
 
 .section-4 {
   background-image: url("../images/section-4-BG.png");
@@ -199,7 +219,8 @@
   margin: 35px 0; }
   @media (min-width: 600px) {
     .section-4-macbook {
-      width: 80%; } }
+      width: 80%;
+      max-width: 550px; } }
 
 .section-4-title {
   margin: 20px 0 0 20px; }
@@ -212,10 +233,11 @@
 
 .section-5 {
   background-image: url("../images/section-5-BG.png");
-  height: fit-content; }
+  height: unset;
+  background-repeat: round; }
   @media (min-width: 600px) {
     .section-5 {
-      height: 70vh;
+      padding: 50px 10px;
       align-items: center; } }
 
 .section-5-name {
@@ -226,11 +248,27 @@
 
 .section-6 {
   background-image: url("../images/section-6-BG.png");
-  height: 100vh; }
+  height: unset; }
+
+@media (min-width: 600px) {
+  .section-6-paragraph {
+    max-width: 70%;
+    margin: auto; } }
+
+@media (min-width: 600px) {
+  .section-6-browser {
+    max-width: 70%;
+    margin: auto; } }
 
 .section-7 {
   background-image: url("../images/section-7-BG.png");
   height: unset; }
+  @media (min-width: 600px) {
+    .section-7 {
+      padding: 60px; } }
+
+.signup-form {
+  margin-top: 60px; }
 
 .signup-input {
   border-radius: 3px;
@@ -240,6 +278,13 @@
   height: 35px;
   width: 90%;
   padding-left: 7px; }
+  @media (min-width: 600px) {
+    .signup-input {
+      width: 20%; } }
+
+.section-7-terms {
+  color: #b8b9c3;
+  font-size: 0.7em; }
 
 .transparent-background {
   background-color: #ffffff2b; }
@@ -251,6 +296,9 @@
   width: 90%;
   background-color: #ff6d6d;
   border: none; }
+  @media (min-width: 600px) {
+    .signup-button {
+      width: 20%; } }
 
 .footer {
   font-size: 14pt; }
