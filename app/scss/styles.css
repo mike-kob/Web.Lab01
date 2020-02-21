@@ -100,7 +100,7 @@
   text-align: center;
   margin: 40px; }
 
-.play-button-svg:hover > .fill-gray {
+.play-button:hover > .fill-gray {
   fill: #5d5d5d;
   cursor: pointer; }
 
@@ -443,6 +443,13 @@
 
 .footer {
   margin-left: 20px; }
+  .footer__social {
+    display: none; }
+    @media (min-width: 600px) {
+      .footer__social {
+        display: flex;
+        width: 100%;
+        justify-content: space-around; } }
   .footer__description {
     width: 85%; }
   .footer__column {

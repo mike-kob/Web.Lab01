@@ -131,7 +131,7 @@
   margin: 40px;
 }
 
-.play-button-svg:hover > .fill-gray {
+.play-button:hover > .fill-gray {
   fill: #5d5d5d;
   cursor: pointer;
 }
@@ -573,6 +573,17 @@
 
 .footer {
   margin-left: 20px;
+
+  &__social {
+    display: none;
+
+    @media (min-width: 600px) {
+      display: flex;
+
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
 
   &__description {
     width: 85%;
