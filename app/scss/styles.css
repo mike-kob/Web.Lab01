@@ -198,9 +198,12 @@
   font-size: 16px;
   font-family: ExoMedium, sans-serif;
   color: rgba(40, 40, 40, 0.659);
-  line-height: 1.625;
+  line-height: 26px;
   margin-top: 40px;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 1px;
+  color: #282828;
+  font-weight: 500; }
   @media (min-width: 600px) {
     .section-2-paragraph {
       text-align: left; } }
@@ -212,6 +215,7 @@
   width: 35%; }
 
 .section-3 {
+  position: relative;
   height: unset;
   background-color: #F6F5F3; }
   @media (min-width: 600px) {
@@ -307,6 +311,11 @@
       text-align: left; } }
 
 .section-4-paragraph {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  color: #282828;
+  font-weight: 500;
   max-width: 90%; }
   @media (max-width: 600px) {
     .section-4-paragraph {
